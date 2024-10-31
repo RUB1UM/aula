@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookverse</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="dark-theme">
+  <header class="header">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="header__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="menu-list">
+        <li class="menu-list__title">Categorias</li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Sci-Fi</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Ficção</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Mistério</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Fantasia</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">História</a>
+        </li>
+      </ul>
+      <img src="img/Logo_dark.svg" alt="Logo do Bookverse" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favorites_dark.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Cart_dark.svg" alt="Carrinho de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/User_dark.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__title">Qual será sua próxima aventura?</h2>
+    <p class="banner__text">Explore novas dimensões na nossa estante de conhecimento!</p>
+    <input type="search" class="banner__search" placeholder="O que deseja descobrir?">
+  </section>
+
+  <section class="carousel">
+    <h2 class="carousel__title">Últimos lançamentos</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/space_odyssey.svg" alt="Livro Space Odyssey da Bookverse"></div>
+        <div class="swiper-slide"><img src="img/mystery_hunt.svg" alt="Livro Mystery Hunt da Bookverse"></div>
+        <div class="swiper-slide"><img src="img/fiction_future.svg" alt="Livro Fiction Future da Bookverse"></div>
+        <div class="swiper-slide"><img src="img/fantasy_land.svg" alt="Livro Fantasy Land"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <div class="card">
+      <div class="card__description">
+        <div class="description">
+          <h3 class="description__title">Sugestão para você...</h3>
+          <h2 class="description__book-title">Universe Builders</h2>
+          <p class="description__text">
+            Uma jornada pela criação de universos em ficção científica.
+          </p>
+        </div>
+        <img src="img/universe_builders.svg" class="description__image" />
+      </div>
+      <div class="card__buttons">
+        <ul class="buttons">
+          <li class="buttons__item">
+            <img src="img/Favorites_dark.svg" alt="Favoritar livro" />
+          </li>
+          <li class="buttons__item">
+            <img src="img/Cart_dark.svg" alt="Adicionar ao carrinho" />
+          </li>
+        </ul>
+        <a href="#" class="buttons__anchor">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2 class="contact__title">Fique por dentro das novidades!</h2>
+    <p class="contact__text">
+      Receba lançamentos e promoções exclusivas.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contact__email" />
+  </section>
+
+  <hr />
+
+  <footer class="footer">
+    <h2 class="footer__title">Bookverse</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
